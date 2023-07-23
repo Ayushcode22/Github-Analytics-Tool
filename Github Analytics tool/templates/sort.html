@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<table>
+    <tr>
+        {% for item in headings %}
+            <th>{{ item }}</th>
+        {% endfor %}
+    </tr>
+    {% for item in List %}
+    <tr>
+        {% for val in item %}
+            <td>{{ val }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+    
+  </table>
+</html>
