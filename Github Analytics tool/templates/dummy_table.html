@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Comparison</title>
+    <!-- Add Bootstrap CSS link here (you can include Bootstrap from a CDN or your local source) -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>User Comparison</h1>
+        <div class="row mt-4">
+            <div class="col">
+                <h3>{{ content1.Name }} Details</h3>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th>Email</th>
+                            <td>{{ content1.Email }}</td>
+                        </tr>
+                        <tr>
+                            <th>Public Repos</th>
+                            <td>{{ content1['Public Repos'] }}</td>
+                        </tr>
+                        <tr>
+                            <th>Location</th>
+                            <td>{{ content1.Location }}</td>
+                        </tr>
+                        <tr>
+                            <th>Bio</th>
+                            <td>{{ content1.Bio }}</td>
+                        </tr>
+                        <tr>
+                            <th>User Type</th>
+                            <td>{{ content1['User Type'] }}</td>
+                        </tr>
+                        <tr>
+                            <th>GitHub Profile Link</th>
+                            <td><a href="{{ content1['GitHub Profile Link'] }}" target="_blank">{{ content1['GitHub Profile Link'] }}</a></td>
+                        </tr>
+                        <tr>
+                            <th>Profile Picture Link</th>
+                            <td><a href="{{ content1['Profile Picture Link'] }}" target="_blank">{{ content1['Profile Picture Link'] }}</a></td>
+                        </tr>
+                        <tr>
+                            <th>Followers</th>
+                            <td>{{ content1.Followers }}</td>
+                        </tr>
+                        <tr>
+                            <th>Following</th>
+                            <td>{{ content1.Following }}</td>
+                        </tr>
+                        <tr>
+                            <th>Languages</th>
+                            <td>{{ content1.Languages }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <h3>{{ content2.Name }} Details</h3>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th>Email</th>
+                            <td>{{ content2.Email }}</td>
+                        </tr>
+                        <tr>
+                            <th>Public Repos</th>
+                            <td>{{ content2['Public Repos'] }}</td>
+                        </tr>
+                        <tr>
+                            <th>Location</th>
+                            <td>{{ content2.Location }}</td>
+                        </tr>
+                        <tr>
+                            <th>Bio</th>
+                            <td>{{ content2.Bio }}</td>
+                        </tr>
+                        <tr>
+                            <th>User Type</th>
+                            <td>{{ content2['User Type'] }}</td>
+                        </tr>
+                        <tr>
+                            <th>GitHub Profile Link</th>
+                            <td><a href="{{ content1['GitHub Profile Link'] }}" target="_blank">{{ content2['GitHub Profile Link'] }}</a></td>
+                        </tr>
+                        <tr>
+                            <th>Profile Picture Link</th>
+                            <td><a href="{{ content1['Profile Picture Link'] }}" target="_blank">{{ content2['Profile Picture Link'] }}</a></td>
+                        </tr>
+                        <tr>
+                            <th>Followers</th>
+                            <td>{{ content2.Followers }}</td>
+                        </tr>
+                        <tr>
+                            <th>Following</th>
+                            <td>{{ content2.Following }}</td>
+                        </tr>
+                        <tr>
+                            <th>Languages</th>
+                            <td>{{ content2.Languages }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and any other scripts you might need here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
