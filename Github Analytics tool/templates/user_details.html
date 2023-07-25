@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+    table, th, td {
+        border:1px solid black;
+    }
+    </style>
+    
+    <body>
+        <h2>User Details</h2>
+        <div>
+            <div>
+                <img src="{{dict['Profile Picture Link'] }}" width = "300" height="300" alt="">
+            </div>
+            <div>
+                <table>
+                    {% for key,value in dict.items() %}
+                    <tr>
+                        <td><strong>{{ key }} </strong>: {{ value }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+
+        
+    </body>
+    
+</html>
